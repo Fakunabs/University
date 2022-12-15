@@ -1,0 +1,86 @@
+<!-- # Tạo 1 file HTML như đã học và làm tất cả bài tập dưới đây
+
+1. Liệt kê 10 thẻ inline, 10 thẻ block và các thẻ semantic HTML5 mà bạn biết
+2. Làm 1 ví dụ về BEM cho block có tên là `boy`
+3. Hãy làm 1 ví dụ về sự kết hợp giữa block và thẻ inline 
+4. Áp dụng kiến thức về BEM đặt tên cho UI này: http://static.collectui.com/shots/1436570/dropdown-menu-lagre
+
+Hint: Block có tên `dropdown` -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- 
+        Bài 1 :
+            + 10 thẻ block :
+                - div 
+                - section 
+                - body
+                - h1
+                - h2 
+                - h3
+                - h4
+                - h5
+                - h6     
+                - artile 
+            + 10 thẻ inline :
+                - span 
+                - img
+                - strong 
+                - em 
+                - i 
+                - b
+                - a
+                - sub 
+                - sup
+                - button
+            + Các thẻ semantic :
+                - section
+                - aside 
+                - main  
+                - article
+                - nav 
+                - footer
+                - header 
+        Bài 2:
+        Block: boy__arm, boy__leg, boy__eye, boy__nose
+        Modifier: boy__arm--long, boy__eye--big
+        Modifier block: boy--tall, boy--fart
+        
+        Bài 3: 
+     -->
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, nam
+      maiores quasi voluptatibus maxime nobis necessitatibus quae laboriosam
+      sequi sunt, qui sit dolorem consequatur omnis tempore, odit eaque animi
+      laudantium?
+      <a href="#">google.com</a>
+    </p>
+    <div class="dropdown">
+      <div class="dropdown__select">
+        <span class="dropdown__selected"></span>
+        <i class="fa fa-caret-down dropdown_caret"></i>
+      </div>
+      <div class="dropdown__list">
+        <div class="dropdown_item">
+          <span class="dropdown_title">
+            <i class="fa fa-plus dropdown_icon"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

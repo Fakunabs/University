@@ -1,0 +1,2 @@
+SELECT nv.HONV, nv.TENNV, nql.HONV,nql.TENNV
+FROM NHANVIEN nv join NHANVIEN nql ON nv.MA_NQL = nql.MANV

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS</title>
+  </head>
+  <body>
+    <!-- BEM: Block Element Modifier-->
+    <!--
+        Laptop: Block 
+        Keyboard, mouse, touchpad, screen: Element  
+        Laptop big, laptop small: Modifier 
+        Small keyboard, small screen: Modifier for element
+
+        
+        Block__Element__modifier 
+        Block--modifier
+        Block__Element 
+
+        laptop
+        laptop__keyboard, laptop__touchpad, laptop screen
+        laptop--small, laptop--expensive, laptop--big
+        laptop__touchpad--smooth, laptop__screen--scale
+
+        Exercise 1: 
+        Block: Flash-Massage
+        Element: image, title, description(desc), button
+        Modifier: primary, secondary
+        
+        Block 1 & 2:
+        flash-massage 
+        flash-massage__image, flash-massage__title, flash-massage__desc, flash-massage__button
+
+        Block 1: flash-massage__title--primary, flash-massage__button--primary
+        Block 2: flash-massage__title--secondary, flash-massage __button--secondary 
+    -->
+    <h3 class="flash-massage__title flash-massage__title--primary">Right on</h3>
+    <button class="flash-massage__button flash-massage__title--secondary">This is button</button>
+  </body>
+</html>
