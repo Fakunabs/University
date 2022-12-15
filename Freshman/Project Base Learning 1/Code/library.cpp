@@ -1,9 +1,4 @@
-#include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
-#include <conio.h>
-#include <windows.h>
-#include <string.h>
+#include <bits/stdc++.h>
 
 typedef char infor[40];
 
