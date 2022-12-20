@@ -11,11 +11,11 @@ class Node{
     Node *next;
 public:
     Node(T data,Node *next):data(data),next(next){};
-    T getNode()
+    T getNode() const
     {
         return data;
     };
-    Node* getNext()
+    Node* getNext() const
     {
         return next;
     }
@@ -33,11 +33,12 @@ class LinkedList{
 public:
     LinkedList(){this->head=NULL;};
     ~LinkedList(){this->head=NULL;};
-    Node<T>* getHead()
+    Node<T>* getHead() const
     {
         return this->head;
     };
     LinkedList InsertNodeAfter(T a);
+    LinkedList DeleteNode(string s);
     LinkedList ReadDataFromFile(string s);
     void SavaDataToFile(string s) const;
     void getNode(T &p);
@@ -62,6 +63,23 @@ LinkedList<T> LinkedList<T>::InsertNodeAfter(T a)
             node = node->next;
         node->next = temp;
     }
+    return *this;
+}
+
+template <class T>
+LinkedList<T> LinkedList<T>::DeleteNode(string s)
+{
+    Node<T> *before=NULL,*after=this->head;
+    while (after!=NULL)
+    {
+        T node_cur=after->data;
+        if(node_cur.getID()==s) break;
+        before=after;
+        after=after->next;
+    }
+    if(before==NULL) this->head = this->head->next;
+    else
+        before->next = after->next;
     return *this;
 }
 
@@ -149,24 +167,6 @@ bool LinkedList<T>::CheckID(string s) const
     }
     return false;
 }
-/*
-template <class T>
-float LinkedList<T>::Cash(string s)
-{
-    float t=0;
-    Node<T> *p=this->head;
-    T node_cur;
-    while (p!=NULL)
-    {
-        node_cur=p->getNode();
-        if(node_cur.getID()==s)
-        {
-            t+=(node_cur.getAmount()*node_cur.getPrice());
-        }
-        p=p->next;
-    }
-    return t;
-}*/
 
 template <class T>
 LinkedList<T> LinkedList<T>::UpDateNode(string s,T temp)

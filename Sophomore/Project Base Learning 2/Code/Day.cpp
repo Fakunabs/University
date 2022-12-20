@@ -79,3 +79,10 @@ Day::~Day()
 
 }
 
+bool Day::operator<=(const Day &D)
+{
+    if (this->year>D.year) return false;
+    if (this->year==D.year && this->month>D.month) return false;
+    if (this->year==D.year && this->month==D.month && this->day>D.day) return false;
+    return true;
+}

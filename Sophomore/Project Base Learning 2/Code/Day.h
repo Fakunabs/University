@@ -22,6 +22,7 @@ public:
     int getYear() const;
     int lastDay(int m,int y);
     bool checkDay();
+    bool operator<=(const Day &D);
     void printfDay() const;
 };
 

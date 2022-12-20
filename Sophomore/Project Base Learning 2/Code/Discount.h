@@ -12,7 +12,7 @@ public:
     Discount(int=0,int=0);
     Discount(const Discount &Ds);
     ~Discount();
-    Discount SetDiscount(int x,int y);
+    Discount SetDiscount(float x,float y);
     Discount ReadNode(string tenFile);
     void SaveNode(string tenFile) const;
     void printfDiscount() const;

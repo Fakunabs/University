@@ -1,5 +1,10 @@
 #include <bits/stdc++.h>
 #include "Product.h"
+#include "Staff.h"
+#include "Member.h"
+#include "Detail.h"
+#include "Day.h"
+#include "Discount.h"
 
 using namespace std;
 
@@ -26,6 +31,16 @@ string Product::getID()const
     return this->IDProduct;
 }
 
+string Product::getIDCategory() const
+{
+    return this->IDCategory;
+}
+
+string Product::getNameProduct() const
+{
+    return this->NameProduct;
+}
+
 int Product::getAmount() const
 {
     return this->amount;
@@ -39,6 +54,11 @@ float Product::getPrice() const
 void Product::UpDateAmount(int amount)
 {
     this->amount+=amount;
+}
+
+void Product::UpDatePrice(int price)
+{
+    this->Price=price;
 }
 
 Product Product::ReadNode(ifstream &file)
@@ -93,6 +113,32 @@ istream &operator>>(istream &in,LinkedList<Product> &P)
     return in;
 }
 
+void Product::DeleteProduct(LinkedList<Product> &P,const LinkedList<Detail> &D)
+{
+    string s;
+    cout << "Nhap ma san pham can xoa:";
+    getline(cin,s);
+    if (P.CheckID(s)==false)
+    {
+        cout << "Khong co phan tu de xoa!" << endl;
+    } else
+    {
+        Node<Detail> *p=D.getHead();
+        while(p!=NULL)
+        {
+            Detail detail_cur=p->getNode();
+            if (detail_cur.getID()==s)
+            {
+                cout << "Khong the xoa!\n";
+                return;
+            }
+            p=p->getNext();
+        }
+        P.DeleteNode(s);
+        cout << "Xoa thanh cong!\n";
+    }
+}
+
 void Product::printfIntro() const
 {
     cout << left << setw(10) << "Ma SP";
@@ -113,3 +159,48 @@ void Product::printfNode() const
     cout << endl;
 
 }
+
+void Product::EditAmount(string s,LinkedList<Product> &P)
+{
+    int amount;
+    do{
+        cout << "Nhap so luong them vao:";
+        cin >> amount;
+    } while (amount<0);
+    Node<Product> *p=P.getHead();
+    Product node_cur;
+    while (p!=NULL)
+    {
+        node_cur=p->getNode();
+        if(node_cur.getID()==s)
+        {
+            node_cur.UpDateAmount(amount);
+            break;
+        }
+        p=p->getNext();
+    }
+    P.UpDateNode(s,node_cur);
+}
+
+void Product::EditPrice(string s,LinkedList<Product> &P)
+{
+    int price;
+    do{
+        cout << "Nhap don gia moi:";
+        cin >> price;
+    } while (price<0);
+    Node<Product> *p=P.getHead();
+    Product node_cur;
+    while (p!=NULL)
+    {
+        node_cur=p->getNode();
+        if(node_cur.getID()==s)
+        {
+            node_cur.UpDatePrice(price);
+            break;
+        }
+        p=p->getNext();
+    }
+    P.UpDateNode(s,node_cur);
+}
+

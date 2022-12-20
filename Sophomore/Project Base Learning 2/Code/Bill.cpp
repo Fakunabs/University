@@ -14,6 +14,11 @@ string Bill::getID() const
     return this->IDBill;
 }
 
+string Bill::getIDMember() const
+{
+    return this->IDMember;
+}
+
 Bill Bill::ReadNode(ifstream &file)
 {
     string line;
@@ -66,7 +71,7 @@ void Bill::SaveNode(ofstream &file) const
 }
 
 
-float Bill::Cash(string s,LinkedList<Detail> &D)
+float Bill::Cash(string s,const LinkedList<Detail> &D)
 {
     float t=0;
     Node<Detail> *p=D.getHead();
@@ -143,12 +148,31 @@ Bill Bill::CreateBill(string MaNV,LinkedList<Bill> &B,LinkedList<Product> &P,Lin
         M.UpDateNode(maTV,m);
     }
 
-    cout << "Thanh tien:" << t-Ds.Change(diem) << endl;
+    cout << "Tong tien:" << t-Ds.Change(diem) << endl;
 
     Bill b(maHD,maTV,D,MaNV,diem,mucCK);
     B.InsertNodeAfter(b);
     *this=b;
     return *this;
+}
+
+void Bill::DeleteBill(LinkedList<Bill> &B,LinkedList<Detail> &D)
+{
+    string s;
+    cout << "Nhsp ma hoa don can xoa:";
+    getline(cin,s);
+    if (B.CheckID(s)==false)
+    {
+        cout << "Khong co phan tu de xoa!" << endl;
+    } else
+    {
+        B.DeleteNode(s);
+        while(D.CheckID(s)==true)
+        {
+            D.DeleteNode(s);
+        }
+        cout << "Xoa thanh cong!" << endl;
+    }
 }
 
 void Bill::printfIntro() const
@@ -170,4 +194,84 @@ void Bill::printfNode() const
 //    cout << left << setw(10) << this-> << endl;
  //   cout << left << setw(10) << this->Point;
   //  cout << left << setw(10) << this->DiscountRate << endl;
+}
+
+void Bill::printfBillDetail(string s,LinkedList<Bill> B,LinkedList<Detail> Dtl,LinkedList<Product> P)
+{
+    *this=B.getNode(s);
+    cout << "Ma hoa don:" << left << setw(15) << this->IDBill << endl ;
+    cout << "Ngay lap:" << this->BillDay << endl;
+    cout << "Ma KH:";
+    if (this->IDMember=="0") cout << "New User" << endl;
+    else cout << this->IDMember << endl;
+    int count=0;
+    Node<Detail> *d=Dtl.getHead();
+    cout << "STT" << endl;
+    while (d!=NULL)
+    {
+        Detail detail_cur=d->getNode();
+        if (detail_cur.getID()==s)
+        {
+            cout << left << setw(5) << ++count;
+            Product p=P.getNode(detail_cur.getIDProduct());
+            cout << left << setw(30) << p.getNameProduct();
+            cout << left << setw(8) << detail_cur.getAmount();
+            cout << right << setw(10) << detail_cur.getPrice() << endl ;
+        }
+        d=d->getNext();
+    }
+    int t=this->Cash(s,Dtl);
+    cout << left << setw(20) << "Thanh tien:" << right << setw(15) << t << endl;
+    Discount discount;
+    discount.SetDiscount(0,this->DiscountRate);
+    cout << left << setw(20) << "Tien chiet khau:" << right << setw(15) << discount.Change(this->Point) << endl;
+    cout << left << setw(20) << "Tong tien:" << right << setw(15) << t-discount.Change(this->Point) << endl;
+}
+
+
+void Bill::printfHistoryBill(string s,const LinkedList<Bill> &B)
+{
+    Node<Bill> *b=B.getHead();
+    while (b!=NULL)
+    {
+        *this=b->getNode();
+        if(this->getIDMember()==s)
+        {
+            this->printfNode();
+        }
+        b=b->getNext();
+    }
+}
+
+void Bill::printfRevenue(LinkedList<Bill> B,LinkedList<Detail> Dtl,LinkedList<Product> P)
+{
+    Day Dstar,Dfinish;
+    cout << "Nhap ngay bat dau:\n";
+    cin >> Dstar;
+    cout << "Nhap ngay ket thuc:\n";
+    cin >> Dfinish;
+    if (Dfinish<=Dstar)
+    {
+        cout << "Ngay nhap vao khong hop le!\n";
+        return ;
+    }
+    float Sum=0;
+    Node<Bill> *b=B.getHead();
+    while (b!=NULL)
+    {
+        *this=b->getNode();
+        if(this->BillDay<=Dfinish && Dstar<=this->BillDay)
+        {
+            cout << left << setw(15) << this->IDBill ;
+            cout << left << setw(20) << this->IDMember;
+            cout << this->BillDay;
+            cout << left << setw(15) << this->IDStaff;
+            float t=this->Cash(this->getID(),Dtl);
+            Sum+=t;
+            cout << left << setw(15) << t << endl;
+        }
+        b=b->getNext();
+    }
+    cout << "Tong doanh thu tu " << Dstar << " den " << Dfinish << " la:";
+    cout << Sum << endl;
 }

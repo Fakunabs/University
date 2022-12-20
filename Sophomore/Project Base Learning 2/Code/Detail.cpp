@@ -1,11 +1,14 @@
 #include <bits/stdc++.h>
 #include "Detail.h"
-#include "Product.h"
 
 using namespace std;
 string Detail::getID() const
 {
     return this->IDReceipt;
+}
+string Detail::getIDProduct() const
+{
+    return this->IDProduct;
 }
 int Detail::getAmount() const
 {

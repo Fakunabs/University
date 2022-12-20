@@ -19,7 +19,7 @@ Discount::~Discount()
 
 }
 
-Discount Discount::SetDiscount(int x,int y)
+Discount Discount::SetDiscount(float x,float y)
 {
     this->PointRate=x;
     this->DiscountRate=y;

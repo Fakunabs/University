@@ -3,6 +3,7 @@
 
 #include <bits/stdc++.h>
 #include "LinkedList.h"
+#include "Product.h"
 
 using namespace std;
 
@@ -18,8 +19,10 @@ public:
     Category ReadNode(ifstream &file);
     void SaveNode(ofstream &file) const;
     friend istream &operator>>(istream &in,LinkedList<Category> &P);
+    void DeleteCategory(LinkedList<Category> &C,const LinkedList<Product> &P);
     void printfIntro() const;
     void printfNode() const;
+    void printfProductCategory(LinkedList<Product> P,LinkedList<Category> C);
 };
 
 #endif // Category_h

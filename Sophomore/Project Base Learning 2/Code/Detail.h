@@ -1,7 +1,6 @@
 #ifndef Detail_h
 #define Detail_h
 #include <bits/stdc++.h>
-#include "Product.h"
 #include "LinkedList.h"
 
 using namespace std;
@@ -18,6 +17,7 @@ public:
 IDReceipt(IDReceipt),IDProduct(IDProduct),amount(amount),Price(Price){};
     ~Detail(){};
     string getID() const;
+    string getIDProduct() const;
     int getAmount() const;
     float getPrice() const;
     Detail ReadNode(ifstream &file);
