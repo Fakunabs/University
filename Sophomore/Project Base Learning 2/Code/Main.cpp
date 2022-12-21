@@ -423,3 +423,4 @@ void SaveData(const LinkedList<Product> &P,const LinkedList<Staff> &S,const Link
     C.SavaDataToFile("Category.txt");
     D.SaveNode("Discount.txt");
 }
+
