@@ -5,24 +5,6 @@
 using namespace std;
 
 
-// int main(int argc, char const *argv[])
-// {
-//     int n, i;
-//     long sum;
-//     n = 1;
-//     sum = 0;
-//     cout << "Nhap n : ";
-//     cin >> n;
-
-//     while (i <= n)
-//     {
-//         sum += i;
-//         i++;
-//     }
-//     cout << endl << "Tong 1 + 2 + ... + n la : " << sum;
-//     return 0;
-// }
-
 int ham_Sum(int n)
 {
     if(n == 1) return 1;
