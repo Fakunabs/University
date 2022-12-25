@@ -56,3 +56,4 @@ void Detail::printfNode() const
     cout << left << setw(10) << this->Price;
     cout << endl;
 }
+

@@ -203,3 +203,4 @@ void Product::EditPrice(string s,LinkedList<Product> &P)
     }
     P.UpDateNode(s,node_cur);
 }
+

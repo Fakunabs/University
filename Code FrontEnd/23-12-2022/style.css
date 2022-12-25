@@ -196,11 +196,18 @@ body {
   position: absolute;
   top: 10%;
   margin: 0;
+  margin-top: 20px;
   width: 100%;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;
+  font-family: "Salsa", cursive;
+  letter-spacing: 1px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: anim 2s linear;
+  font-size: 70px;
 }
 
 .title:before {
@@ -225,7 +232,7 @@ body {
 	-webkit-box-sizing:border-box;
 	   -moz-box-sizing:border-box;
 	        box-sizing:border-box;
-	min-width:100px;
+	width:200px;
 	padding: 22px 33px;
 	font-family: 'Lobster', cursive;
 	font-size: 26px;
@@ -292,6 +299,40 @@ body {
 .centerer {
     align-items: center;
     text-align: center;
-    /* display: flex; */
-    margin-top: 300px;
+    margin-top: 400px;
+}
+.star {
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  background-color: #ffff00;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+
+}
+.star1 {
+  position: absolute;
+  bottom: 790px;
+  /* right: 10; */
+  left: 299px;
+  margin: auto;
+  filter: drop-shadow(0 0 10px rgb(247, 195, 55));
+}
+/*--------------------------------------------------------- */
+#preloader {
+  background: #000;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
 }

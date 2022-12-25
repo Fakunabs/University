@@ -28,3 +28,4 @@ string Address,string Email,float Wage):Person(name,sdt,ngaysinh)
 };
 
 #endif // Staff_h
+

@@ -4,12 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="ring.png" />
     <link rel="stylesheet" href="style.css" />
-    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    <title>Document</title>
+    <script src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <title>Dang xinh cho be Ngan</title>
   </head>
+
   <body>
-    <h1 class="title">Create a flake</h1>
+    <!-- <div id="candy">
+      <div id="candy-loader"></div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      setTimeout(function () {
+        $("#candy").fadeOut(1000);
+      }, 3000)
+    </script> -->
+    <div id="preloader"></div>
+    <h1 class="title">Merry Christmas !!!</h1>
 
     <button class="button button--next" id="js-next-button">
       <span>Next</span>
@@ -22,9 +42,12 @@
 
     <div class="demo-animation__touch-marker" id="touch-marker"></div>
     <div class="bg">
-		<div class="centerer">
-			<a href="#" class="button1">Christmas Button</a>
-		</div>
-	</div>
+      <div class="centerer">
+        <a href="#" class="button1" onclick="playMusic()">Click me !!!</a>
+      </div>
+    </div>
+    <div class="star1">
+      <div class="star"></div>
+    </div>
   </body>
 </html>
