@@ -9,4 +9,5 @@ public class Input {
         int b = sc.nextInt();
         System.out.println("a + b = " + (a + b));
     }
+
 }
