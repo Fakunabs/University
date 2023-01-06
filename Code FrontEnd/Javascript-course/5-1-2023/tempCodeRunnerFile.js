@@ -1,1 +1,1 @@
-number
+console.log("co loi");

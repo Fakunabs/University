@@ -39,11 +39,11 @@ const fetchData = () => {
             }
             console.log("Inprogress la")
             for (let i = 0; i < inProgress.length; i++) {
-                console.log(`${i+1}. ${inProgress[i].title}`)
+                console.log(${i+1}. ${inProgress[i].title})
             }
             console.log("done la")
             for (let i = 0; i < done.length; i++) {
-                console.log(`${i+1}. ${done[i].title}`)
+                console.log(${i+1}. ${done[i].title})
             }
         })
     .catch((error) => {
