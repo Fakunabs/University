@@ -1,0 +1,13 @@
+
+V
+java:S1854";Remove this useless assignment to local variable "tenSach".(ßÔ¦¦ÿÿÿÿÿ
+Q
+java:S1854";Remove this useless assignment to local variable "hoVaTen".(¸˜¸—
+B
+java:S1481",Remove this unused "hoVaTen" local variable.(¸˜¸—
+B
+java:S1481",Remove this unused "tenSach" local variable.(¯  …
+M	java:S106
+"9Replace this use of System.out or System.err by a logger.(¦ÞÎp
+I
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ
