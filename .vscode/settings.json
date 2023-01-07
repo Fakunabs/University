@@ -2,5 +2,6 @@
     "files.associations": {
         "filesystem": "cpp",
         "random": "cpp"
-    }
+    },
+    "liveServer.settings.port": 5501
 }
