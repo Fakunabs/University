@@ -69,26 +69,125 @@
 // Day 1 : tên nhân viên làm việc (nv A)    Giờ làm : 5 tiếng     lương là 20k/h    Tổng lương : 100k
 // Day 1 : tên nhân viên làm việc (nv A)    Giờ làm : 8 tiếng
 
+// #include <iostream>
+
+// using namespace std;
+
+// bool isIncreasingChainNumber(int number) {
+//     int prev = 0;
+//     int curr = 0;
+//     while (number > 0) {
+//         prev = curr;
+//         curr = number % 10;
+//         if (prev >= curr) {
+//             return false;
+//         }
+//         number /= 10;
+//     }
+//     return true;
+// }
+
+// int main() {
+//     int number1 = 123456789;
+//     int number2 = 123432112321;
+//     int number3 = 988811111;
+
+//     cout << isIncreasingChainNumber(number1) << endl; // true
+//     cout << isIncreasingChainNumber(number2) << endl; // true
+//     cout << isIncreasingChainNumber(number3) << endl; // false
+// }
+
+// // Write a program to convert normal text from lowercase to uppercase and vice versa.
+// #include <iostream>
+// #include <string>
+
+// using namespace std;
+
+// int main()
+// {
+//     string str;
+//     cout << "Enter a string: ";
+//     getline(cin, str);
+
+//     for (int i = 0; i < str.length(); i++)
+//     {
+//         if (str[i] >= 'a' && str[i] <= 'z')
+//             str[i] = str[i] - 32;
+//         else if (str[i] >= 'A' && str[i] <= 'Z')
+//             str[i] = str[i] + 32;
+//     }
+//     cout << "String after case conversion: " << str;
+//     return 0;
+// }
+/**
+ * It takes an array of integers and returns the number of times the most frequent integer occurs
+ * 
+ * @return The number of times the most frequent number appears.
+ */
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int main(void)
+// {
+//     int a[50], n;
+//     do {
+//         printf("\n Nhap so luong phan tu: ");
+//         scanf("%d", &n);
+//         if (n <= 0)
+//             printf(" Nhap n duong!");
+//     } while (n <= 0);
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf(" Phan tu a[%d]: ", i);
+//         scanf("%d", &a[i]);
+//     }
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("%3d", a[i]);
+//     }
+//     int max = 0;
+//     int dem = 1;
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (a[i] == a[i + 1])
+//         {
+//             dem++;
+//             if (dem > max)
+//             {
+//                 max = dem;
+//             }
+//         }
+//         else
+//         {
+
+//             dem = 1;
+//         }
+//     }
+//     printf("\nSo lan nhat hien nhieu nhat la: %d", max);
+//     // getch();
+//     return 0;
+// }
+
+// Viết chương trình để kiểm tra chuỗi (không phân biệt hoa thường) chứa 'abc' hay không
 #include <iostream>
+#include <string>
+#include <algorithm>
+
 using namespace std;
 
-void Tower(int n, char a, char b, char c)
-{
-    if (n == 1)
-    {
-        cout << "\t" << a << "-------" << c << endl;
-        return;
-    }
-    Tower(n - 1, a, c, b);
-    Tower(1, a, b, c);
-    Tower(n - 1, b, a, c);
-}
 int main()
 {
-    char a = 'A', b = 'B', c = 'C';
-    int n;
-    cout << "Nhap n: ";
-    cin >> n;
-    Tower(n, a, b, c);
+    string str;
+    cout << "Enter a string: ";
+    getline(cin, str);
+    transform(str.begin(), str.end(), str.begin(), ::tolower);
+    if (str.find("abc") != string::npos)
+    {
+        cout << "String contains abc";
+    }
+    else
+    {
+        cout << "String does not contain abc";
+    }
     return 0;
 }
