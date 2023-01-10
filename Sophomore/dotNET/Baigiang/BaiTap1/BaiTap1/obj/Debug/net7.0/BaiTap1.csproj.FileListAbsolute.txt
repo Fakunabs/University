@@ -1,0 +1,15 @@
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap1/BaiTap1/bin/Debug/net7.0/BaiTap1
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap1/BaiTap1/bin/Debug/net7.0/BaiTap1.deps.json
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap1/BaiTap1/bin/Debug/net7.0/BaiTap1.runtimeconfig.json
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap1/BaiTap1/bin/Debug/net7.0/BaiTap1.dll
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap1/BaiTap1/bin/Debug/net7.0/BaiTap1.pdb
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap1/BaiTap1/obj/Debug/net7.0/BaiTap1.csproj.AssemblyReference.cache
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap1/BaiTap1/obj/Debug/net7.0/BaiTap1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap1/BaiTap1/obj/Debug/net7.0/BaiTap1.AssemblyInfoInputs.cache
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap1/BaiTap1/obj/Debug/net7.0/BaiTap1.AssemblyInfo.cs
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap1/BaiTap1/obj/Debug/net7.0/BaiTap1.csproj.CoreCompileInputs.cache
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap1/BaiTap1/obj/Debug/net7.0/BaiTap1.dll
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap1/BaiTap1/obj/Debug/net7.0/refint/BaiTap1.dll
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap1/BaiTap1/obj/Debug/net7.0/BaiTap1.pdb
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap1/BaiTap1/obj/Debug/net7.0/BaiTap1.genruntimeconfig.cache
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap1/BaiTap1/obj/Debug/net7.0/ref/BaiTap1.dll
