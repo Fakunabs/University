@@ -5,9 +5,28 @@ public class HoaDonCaPhe {
     private double giaTien1Kg;
     private double khoiLuong;
 
-    public HoaDonCaPhe(String tenLoaiCaPhe, double giaTien1Kg, double khoiLuong) {
-        this.tenLoaiCaPhe = ;
-        this.giaTien1Kg = giaTien1Kg;
-        this.khoiLuong = khoiLuong;
+    public HoaDonCaPhe(String ten, double gia, double kl) {
+        this.tenLoaiCaPhe = ten;
+        this.giaTien1Kg = gia;
+        this.khoiLuong = kl;
+    }
+
+    public double TnhTongTien() {
+        return this.giaTien1Kg * this.khoiLuong;
+    }
+
+    public boolean kiemTraKhoiLuongLonHon(double kl) {
+        if (this.khoiLuong > kl) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public boolean kiemTraTongTienLonHon500K(){
+        if (this.TnhTongTien() > 500) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
