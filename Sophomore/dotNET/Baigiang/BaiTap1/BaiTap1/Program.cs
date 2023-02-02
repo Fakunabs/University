@@ -37,26 +37,24 @@ namespace BaiTap1
 
         }*/
         //static void HV(int a, int b) // Biến a đang là biến giá trị
-        static void HV(int a, int b) // Thêm từ khóa ref để biến nó thành biến tham chiếu
-        {
-            Console.WriteLine("Truoc HV: a = {0}, b = {1}", a, b);
-            int temp = a;
-            a = b;
-            b = temp;
-            Console.WriteLine("Sau HV: a = {0}, b = {1}", a, b);
-        }
         static void Main(string[] args)
         {
-            int m, n;
-            // Nhập m, n từ bàn phím
-            Console.Write("m = ");
-            m = Convert.ToInt32(Console.ReadLine());
-            Console.Write("n = ");
-            n = Convert.ToInt32(Console.ReadLine());
-            HV(m, n);
-            Console.WriteLine("m = {0}, n = {1}", m, n);
+            string[,] arr = new string[3, 2]
+            {
+                {"A", "B" },
+                {"C", "D" },
+                {"E", "F" }
+            };
 
-            Console.ReadKey();
+
+            for (int i = 0; i < 3; ++i)
+            {
+                for (int j = 0; j < 2; ++i)
+                {
+                    Console.Write("arr[{0}, {1}] = {2} ", i, j, arr[i, j]);
+                }
+                Console.WriteLine();
+            }
         }
     }
 }

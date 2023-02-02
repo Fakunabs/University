@@ -3,5 +3,6 @@
         "filesystem": "cpp",
         "random": "cpp"
     },
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "python.formatting.provider": "black"
 }
