@@ -1,38 +1,30 @@
-// // Undifined 
-
-// let a;
-// console.log(a); // undefined
-
-// let b;
-// console.log(b); // 100
-// b = 100;
-// console.log(b); // 100
-
-// const c = "String"
-
-// // Null -> nothing
-
-// let d = null;
-// console.log(d); // null
-
-
-
-let n = Number(prompt("Nhập n: "));
-console.log(n);
-if (n == 1 ) {
-    console.log(`${n} không là số nguyên tố`); 
-} else {
-    for (let i = 2; i < n; i++){
-        if (n % i == 0) {
-            console.log(`${n} không là số nguyên tố`);
-            break;
-        }else {
-            console.log(`${n} là số nguyên tố`);
-            break;
+let month = prompt("Nhập vào tháng bạn muốn tìm ngày : ");
+let year = prompt("Nhập vào năm bạn muốn tìm ngày : ");
+let day = 0;
+switch (month ) {
+    case "1":
+    case "3":
+    case "5":
+    case "7":
+    case "8":
+    case "10":
+    case "12":
+        day = 31;
+        break;
+    case "4":
+    case "6":
+    case "9":
+    case "11":
+        day = 30;
+        break;
+    case "2": 
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            day = 29;
         }
-    }
-} 
-
-
-
-    
+        else {
+            day = 28;
+        }
+    default:
+        break;
+}
+alert("Tháng " + month + " năm " + year + " có " + day + " ngày");

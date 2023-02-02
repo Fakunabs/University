@@ -26,7 +26,7 @@ public class Bai3 {
                 System.out.println("Phương trình có nghiệm x = " + (float) -c / b);
             }
         } else {
-            int delta = b * b - 4 * a * c;
+            int delta = (b * b) - (4 * a * c);
             System.out.println("Delta = " + delta);
             if (delta < 0) {
                 System.out.println("Phương trình vô nghiệm");
