@@ -1,7 +1,14 @@
 ﻿<Properties StartupConfiguration="{CCB4ABB9-79F3-4BCB-A76A-2715685685D2}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.BaiTap1 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="BaiTap1/102210234-NguyenXuanThinh.cs">
     <Files>
-      <File FileName="BaiTap1/QLSV.cs" Line="28" Column="19" />
+      <File FileName="BaiTap1/102210234-NguyenXuanThinh.cs" Line="33" Column="69" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,11 +24,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.BaiTap1 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

@@ -1,5 +1,5 @@
 #include "NVHopDong.h"
-
+// Lớp nhân viên hợp đồng
 void NVHopDong::tinhluong() {
 	const int songaylamviec = 20;
 	luong = luongcongnhat * songaylamviec;

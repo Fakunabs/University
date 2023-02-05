@@ -1,5 +1,5 @@
 #include "Quanly.h"
-
+// Lớp quản lý
 bool tang_dan(string trai, string phai) { return (trai < phai); }
 bool giam_dan(string trai, string phai) { return (trai > phai); }
 

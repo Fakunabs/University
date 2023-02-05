@@ -1,8 +1,7 @@
 // Viết chương trình tìm số nguyên tố nhỏ nhất lớn hơn n
 
 
-#include <stdio.h>
-#include <math.h>
+#include <bit/stdc++.h>
 
 int isPrime(int n) {
     if (n < 2) {

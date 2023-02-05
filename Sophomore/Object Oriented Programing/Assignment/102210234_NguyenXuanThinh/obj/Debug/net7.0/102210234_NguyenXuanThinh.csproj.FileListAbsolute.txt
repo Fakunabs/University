@@ -1,0 +1,5 @@
+/Users/laptoptt/Documents/University/Sophomore/Object Oriented Programing/Assignment/102210234_NguyenXuanThinh/obj/Debug/net7.0/102210234_NguyenXuanThinh.csproj.AssemblyReference.cache
+/Users/laptoptt/Documents/University/Sophomore/Object Oriented Programing/Assignment/102210234_NguyenXuanThinh/obj/Debug/net7.0/102210234_NguyenXuanThinh.GeneratedMSBuildEditorConfig.editorconfig
+/Users/laptoptt/Documents/University/Sophomore/Object Oriented Programing/Assignment/102210234_NguyenXuanThinh/obj/Debug/net7.0/102210234_NguyenXuanThinh.AssemblyInfoInputs.cache
+/Users/laptoptt/Documents/University/Sophomore/Object Oriented Programing/Assignment/102210234_NguyenXuanThinh/obj/Debug/net7.0/102210234_NguyenXuanThinh.AssemblyInfo.cs
+/Users/laptoptt/Documents/University/Sophomore/Object Oriented Programing/Assignment/102210234_NguyenXuanThinh/obj/Debug/net7.0/102210234_NguyenXuanThinh.csproj.CoreCompileInputs.cache

@@ -1,0 +1,5 @@
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap2/BaiTap2/obj/Debug/net7.0/BaiTap2.csproj.AssemblyReference.cache
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap2/BaiTap2/obj/Debug/net7.0/BaiTap2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap2/BaiTap2/obj/Debug/net7.0/BaiTap2.AssemblyInfoInputs.cache
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap2/BaiTap2/obj/Debug/net7.0/BaiTap2.AssemblyInfo.cs
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap2/BaiTap2/obj/Debug/net7.0/BaiTap2.csproj.CoreCompileInputs.cache

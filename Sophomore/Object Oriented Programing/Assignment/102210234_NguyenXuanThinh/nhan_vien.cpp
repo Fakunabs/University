@@ -1,6 +1,6 @@
 #include "nhan_vien.h"
 #include <string.h>
-
+// Lớp nhân viên
 nhan_vien::nhan_vien(string ma, string ten, date ngaybatdau, bool gioitinh, double luong)
 	:manv(ma), ten(ten), ngayvaolam(ngayvaolam), gioitinh(gioitinh), luong(luong) {}
 

@@ -1,5 +1,5 @@
 #include "NVBienChe.h"
-
+// Lớp nhân viên biên chế
 NVBienChe::NVBienChe(double hesoluong, double thamnienlamviec, double luongcoban)
 	:hesoluong(hesoluong), thamnienlamviec(thamnienlamviec), luongcoban(luongcoban)
 {

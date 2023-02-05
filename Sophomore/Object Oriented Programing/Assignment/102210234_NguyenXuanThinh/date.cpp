@@ -1,5 +1,16 @@
 #include "date.h"
+// Lớp date 
+class date {
+private:
+	int ngay;
+	int thang;
+	int nam;
+public: 
+	date();
 
+	friend istream& operator >>(istream&, date&);
+	friend ostream& operator <<(ostream&,const date&);
+};
 date::date() {
 	ngay = 0;
 	thang = 0; 
@@ -45,3 +56,5 @@ ostream& operator <<(ostream& out,const date& x) {
 	out << x.ngay << "/" << x.thang << "/" << x.nam;
 	return out;
 }
+
+
