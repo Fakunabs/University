@@ -1,5 +1,0 @@
-/Users/laptoptt/Documents/University/obj/Debug/net7.0/University.csproj.AssemblyReference.cache
-/Users/laptoptt/Documents/University/obj/Debug/net7.0/University.GeneratedMSBuildEditorConfig.editorconfig
-/Users/laptoptt/Documents/University/obj/Debug/net7.0/University.AssemblyInfoInputs.cache
-/Users/laptoptt/Documents/University/obj/Debug/net7.0/University.AssemblyInfo.cs
-/Users/laptoptt/Documents/University/obj/Debug/net7.0/University.csproj.CoreCompileInputs.cache

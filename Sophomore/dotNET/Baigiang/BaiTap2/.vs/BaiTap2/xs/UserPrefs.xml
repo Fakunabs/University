@@ -1,23 +1,29 @@
 ﻿<Properties StartupConfiguration="{CEF00517-5626-4E45-8F37-EEB30450606D}|Default">
-  <MonoDevelop.Ide.ItemProperties.BaiTap2 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.BaiTap2 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="BaiTap2/Program.cs">
     <Files>
-      <File FileName="BaiTap2/Program.cs" Line="154" Column="40" />
+      <File FileName="BaiTap2/Clock.cs" Line="19" Column="7" />
+      <File FileName="BaiTap2/AnalogClock.cs" Line="6" Column="42" />
+      <File FileName="BaiTap2/DigitalClock.cs" Line="12" Column="6" />
+      <File FileName="BaiTap2/Program.cs" Line="20" Column="1" />
+      <File FileName="BaiTap2/TimeEventArgs.cs" Line="4" Column="40" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BaiTap2" expanded="True">
-            <Node name="BaiTap2" expanded="True" />
+            <Node name="BaiTap2" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
 </Properties>

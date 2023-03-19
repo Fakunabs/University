@@ -3,3 +3,13 @@
 /Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap2/BaiTap2/obj/Debug/net7.0/BaiTap2.AssemblyInfoInputs.cache
 /Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap2/BaiTap2/obj/Debug/net7.0/BaiTap2.AssemblyInfo.cs
 /Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap2/BaiTap2/obj/Debug/net7.0/BaiTap2.csproj.CoreCompileInputs.cache
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap2/BaiTap2/bin/Debug/net7.0/BaiTap2
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap2/BaiTap2/bin/Debug/net7.0/BaiTap2.deps.json
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap2/BaiTap2/bin/Debug/net7.0/BaiTap2.runtimeconfig.json
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap2/BaiTap2/bin/Debug/net7.0/BaiTap2.dll
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap2/BaiTap2/bin/Debug/net7.0/BaiTap2.pdb
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap2/BaiTap2/obj/Debug/net7.0/BaiTap2.dll
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap2/BaiTap2/obj/Debug/net7.0/refint/BaiTap2.dll
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap2/BaiTap2/obj/Debug/net7.0/BaiTap2.pdb
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap2/BaiTap2/obj/Debug/net7.0/BaiTap2.genruntimeconfig.cache
+/Users/laptoptt/Documents/University/Sophomore/dotNET/Baigiang/BaiTap2/BaiTap2/obj/Debug/net7.0/ref/BaiTap2.dll
