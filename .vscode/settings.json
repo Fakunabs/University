@@ -1,8 +1,15 @@
 {
     "files.associations": {
         "filesystem": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "typeindex": "cpp",
+        "typeinfo": "cpp",
+        "iostream": "cpp",
+        "istream": "cpp"
     },
     "liveServer.settings.port": 5501,
-    "python.formatting.provider": "black"
+    "python.formatting.provider": "black",
+    "cSpell.words": [
+        "overrideable"
+    ]
 }
